@@ -358,6 +358,9 @@ footer {
     padding-bottom: 2rem;
   }
   /* Creative process mobile */
+  #creative-sec {
+    margin: 2rem 0;
+  }
   .creative {
     flex-direction: column;
     padding: 0.5rem;
