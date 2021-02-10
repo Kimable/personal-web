@@ -254,6 +254,75 @@ a {
   top: 480.25px;
   z-index: -1;
 }
+
+/* About Page */
+.about-page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-page-img {
+  width: 60%;
+}
+
+.about-page-img img {
+  width: 85%;
+  border-radius: 25px;
+}
+.about-page-text {
+  width: 40%;
+}
+.about-page-text .btn {
+  display: inline-block;
+}
+
+/* Contact page */
+.contact-page {
+  padding: 40px 150px;
+}
+form {
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #c4c4c4;
+}
+
+.contact-page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-page-img {
+  width: 60%;
+}
+
+.contact-page-img img {
+  width: 70%;
+  border-radius: 25px;
+}
+.contact-page-text {
+  width: 40%;
+}
+.contact-page button {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #1c1d24;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 /* Footer Section */
 footer {
   background: #1c1d24;
@@ -279,6 +348,11 @@ footer {
 }
 .social i:hover {
   color: #ea2340;
+}
+
+/* 404 page */
+.PNF a {
+  display: inline-block;
 }
 
 /* Mobile responsive */
@@ -380,6 +454,31 @@ footer {
   .general-blob-2 {
     top: 650px;
     left: 357px;
+  }
+  /* About Page Styles */
+  .about-page-content {
+    flex-direction: column;
+  }
+  .about-page-img,
+  .about-page-text {
+    width: 100%;
+  }
+  .about-page-img img {
+    width: 100%;
+  }
+  /* Contact Page style */
+  .contact-page-content {
+    flex-direction: column;
+  }
+  .contact-page-img,
+  .contact-page-text {
+    width: 100%;
+  }
+  .contact-page-img img {
+    width: 100%;
+  }
+  .contact-page {
+    padding: 10px 30px;
   }
   /* Footer mobile */
   footer {

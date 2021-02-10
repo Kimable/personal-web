@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    <!-- Nav Section -->
+    <%- include('partials/nav') %>
+    <!-- Contact us page content -->
+    <div class="contact-page container">
+      <h1>Lets Talk</h1>
+      <h4>
+        Page still under construction, the contact form will not work. Try
+        reaching me using the following information
+      </h4>
+      <p>CALL ME: +254 719 849 455</p>
+      <P>EMAIL ME: kkimani@yahoo.com</P>
+      <div class="contact-page-content">
+        <div class="contact-page-img">
+          <img src="img/contact-img.png" alt="Contact us illustration" />
+        </div>
+        <div class="contact-page-text">
+          <form action="send">
+            <div class="name-field">
+              <label for="name">First Name</label><br />
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="email-field">
+              <label for="email">Email</label><br />
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="phone-field">
+              <label for="phone">Phone No.</label><br />
+              <input type="text" id="phone" name="phone" />
+            </div>
+            <div class="message-field">
+              <label for="message">Message</label><br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+  </body>
+</html>
