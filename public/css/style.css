@@ -33,7 +33,7 @@ p {
   padding: 10px 0;
 }
 .btn {
-  padding: 10px 15px;
+  padding: 8px 10px;
   background-color: #ea2340;
   font-weight: bold;
   border-radius: 5px;
@@ -76,12 +76,10 @@ a {
 }
 .nav-links .btn {
   font-family: "poppins", sans-serif;
-  text-transform: uppercase;
-  font-family: Poppins;
+  font-family: "Pacifico", cursive;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   text-align: center;

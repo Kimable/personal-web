@@ -33,6 +33,12 @@ app.get("/contact", (req, res) => {
   let items = ["Shoes", "Shirt", "Trousers"];
   res.render("contact", { header: "KIM", items: items });
 });
+app.get("/thanks", (req, res) => {
+  res.render("thanks");
+});
+app.get("/error", (req, res) => {
+  res.render("error");
+});
 
 // Contact middleware
 app.post("/send", (req, res) => {
@@ -73,7 +79,8 @@ app.post("/send", (req, res) => {
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
   }
-  res.redirect("/");
+
+  res.redirect("/thanks");
 
   main().catch(console.error);
 });
