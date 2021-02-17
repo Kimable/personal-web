@@ -6,19 +6,23 @@
     <%- include('partials/nav') %>
     <!-- Contact us page content -->
     <div class="contact-page container">
-      <h1>Lets Talk</h1>
-      <h4>
-        Page still under construction, the contact form will not work. Try
-        reaching me using the following information
-      </h4>
-      <p>CALL ME: +254 719 849 455</p>
-      <P>EMAIL ME: kkimani@yahoo.com</P>
+      <div class="contact-intro">
+        <h1>Lets Talk</h1>
+        <h4>Feel free to reach me through the following information</h4>
+        <p>CALL ME: +254 719 849 455</p>
+        <P>EMAIL ME: info@kkimani.com</P>
+      </div>
+
+      <!-- Contact Form -->
       <div class="contact-page-content">
         <div class="contact-page-img">
           <img src="img/contact-img.png" alt="Contact us illustration" />
         </div>
+
+        <!-- Form -->
         <div class="contact-page-text">
-          <form action="send">
+          <h3 style="padding: 1.5rem 0">Send a Direct Message</h3>
+          <form action="send" method="POST">
             <div class="name-field">
               <label for="name">First Name</label><br />
               <input type="text" id="name" name="name" required />

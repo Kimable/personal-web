@@ -23,14 +23,14 @@ body {
 h1,
 h2 {
   font-family: "Playfair Display", serif;
-  padding: 16px 0;
+  padding: 10px 0;
 }
 img {
   width: 100%;
   height: auto;
 }
 p {
-  padding: 16px 0;
+  padding: 10px 0;
 }
 .btn {
   padding: 10px 15px;
@@ -44,6 +44,8 @@ p {
 a {
   text-decoration: none;
   color: #f5eee6;
+  display: inline-block;
+  padding: 10px 0;
 }
 /* Nav styles */
 #nav {
@@ -276,9 +278,40 @@ a {
   display: inline-block;
 }
 
+/* Project Page styles */
+.projects {
+  padding: 35px;
+}
+
+.projects-intro {
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+.project {
+  width: 30%;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  background-color: rgb(247, 244, 244);
+}
+.projects-container a {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
 /* Contact page */
 .contact-page {
   padding: 40px 150px;
+}
+.contact-intro {
+  text-align: center;
+  padding: 1.5rem 0;
 }
 form {
   display: block;
@@ -465,6 +498,18 @@ footer {
   }
   .about-page-img img {
     width: 100%;
+  }
+
+  /* Projects page */
+  .projects-container {
+    flex-direction: column;
+  }
+  .project {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .projects-intro {
+    padding: 0;
   }
   /* Contact Page style */
   .contact-page-content {
