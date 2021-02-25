@@ -39,6 +39,10 @@ app.get("/thanks", (req, res) => {
 app.get("/error", (req, res) => {
   res.render("error");
 });
+// CV
+app.get("/resume", (req, res) => {
+  res.render("resume");
+});
 
 // Contact middleware
 app.post("/send", (req, res) => {
