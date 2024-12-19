@@ -3,7 +3,6 @@ const nodemailer = require("nodemailer");
 
 // async..await is not allowed in global scope, must use a wrapper
 async function main() {
-  
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "smtp.zoho.com",
@@ -11,7 +10,7 @@ async function main() {
     secure: true, // true for 465, false for other ports
     auth: {
       user: "info@kkimani.com", // generated ethereal user
-      pass: "Mayfair@2005", // generated ethereal password
+      pass: process.env.PASS, // generated ethereal password
     },
   });
 
