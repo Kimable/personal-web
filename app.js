@@ -44,11 +44,6 @@ app.get("/resume", (req, res) => {
   res.render("resume");
 });
 
-// Recording
-app.get("/audio-optimate", (req, res) => {
-  res.render("audio-optimate");
-});
-
 // Contact middleware
 app.post("/send", (req, res) => {
   // async..await is not allowed in global scope, must use a wrapper
